@@ -1,0 +1,13 @@
+{
+  "name": "Glanzly Gebäudereinigung",
+  "short_name": "Glanzly",
+  "lang": "de",
+  "start_url": "/glanzly-preview/",
+  "display": "browser",
+  "background_color": "#FFFFFF",
+  "theme_color": "#162D4F",
+  "icons": [
+    { "src": "/glanzly-preview/favicon.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/glanzly-preview/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
