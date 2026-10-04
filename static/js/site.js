@@ -224,3 +224,9 @@
     });
   }
 })();
+
+// Respect reduced motion: stop the hero loop on the poster frame.
+(function () {
+  var v = document.querySelector('.hero-video');
+  if (v && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) { v.removeAttribute('autoplay'); v.pause(); }
+})();

@@ -546,3 +546,8 @@ body { background-color: var(--white); background-image: var(--dots); background
 .article, .legal, .related { background-color: #fff; background-image: none; }
 .related { background-color: var(--mist); }
 .lead-form, .plan, .protocol, .faq-list, .area-list li { background-color: #fff; }
+
+/* Hero video: same frame as the hero photo, still poster when motion is reduced */
+.hero-media .hero-video { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; background: var(--navy); }
+@media (max-width: 900px) { .hero-media .hero-video { aspect-ratio: 16 / 10; } }
+@media (prefers-reduced-motion: reduce) { .hero-video { animation: none; } }
